@@ -9,7 +9,7 @@
     "test": "ng test",
     "serve:ssr": "node dist/multikart-frontend/server/server.mjs",
     "build:ssr": "ng build && ng run multikart-frontend:server",
-    "vercel-build": "npm run build",
+    "vercel-build": "ng build --configuration production",
     "prerender": "ng run multikart-frontend:prerender"
   },
   "private": true,
